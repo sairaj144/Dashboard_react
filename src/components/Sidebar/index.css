@@ -1,0 +1,40 @@
+
+
+.sidebar-container{
+    background-color: #ffffff;
+    max-width: 30%;
+}
+
+.dropitem{
+    border:none;
+    width:90%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+    padding: 10px 40px 10px 5px;
+    border-radius: 4px;
+    margin: 2px;
+    background-color: transparent;
+    list-style-type: none;
+}
+
+.listitem{
+    width:90%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+    padding: 10px 40px 10px 5px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+ul{
+    width:200px;
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: aqua;
+  }

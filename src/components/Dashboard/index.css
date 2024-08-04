@@ -1,0 +1,71 @@
+.dashboard-container{
+    flex-grow: 1;
+    background-color: rgb(247, 240, 240);
+}
+
+.navbar{
+    background-color: rgb(180, 235, 216);
+    width: 100%;
+    height: 30px;
+}
+.db-btn{
+    background-color: #ffffff;
+    border-radius: 4px 4px 0px 0px;
+    border:none;
+    cursor: pointer;
+    color: blueviolet;
+    padding: 6px;
+    margin-left: 8px;
+    font-size: 14px;
+    font-family: 'roboto';
+    width: 120px;
+}
+.chart-container{
+    height: 95%;
+    margin: 0px, 8px, 0px, 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.linechart-container{
+    width: 48%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+}
+.piechart-container{
+    width: 48%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.chart-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hr-line{
+    height: 1px;
+    opacity: 0.3;
+
+}
+
+.linechart, .piechart{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.iconInfo{
+    color: black;
+    font-size: 18px;
+}
