@@ -30,6 +30,20 @@
     margin: 2px;
 }
 
+.list-btn{
+    border:none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+    text-decoration: none;
+}
+
+.active-tab-btn{
+    background-color: aqua;
+    color:blueviolet;
+}
+
 ul{
     width:200px;
     list-style-type: none;

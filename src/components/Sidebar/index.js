@@ -1,3 +1,4 @@
+import {Component} from 'react'
 import './index.css'
 import {v4 as uuidv4} from 'uuid'
 import Listitem from './listitem.js'
@@ -18,14 +19,32 @@ const dropdownList=[
 ]
 
 
-const Sidebar=()=>{
-    return(
-    <div className='sidebar-container'>
-        <ul>
-            {sidebarList.map(eachItem=> <Listitem key={eachItem.id} eachItem={eachItem}/> )}
-            {dropdownList.map(eachItem=> <Dropitem key={eachItem.id} eachItem={eachItem}/> )}
-        </ul>
-    </div>
-)}
+
+class Sidebar extends Component {
+    state = {
+        activeid: sidebarList[0].id,
+    }
+
+    clickTabItem = tabValue => {
+        this.setState({activeid: tabValue})
+    }
+
+    render(){
+        const {activeid} = this.state
+        console.log(activeid)
+        return(
+        <div className='sidebar-container'>
+            <ul>
+                {sidebarList.map(eachItem=> <Listitem key={eachItem.id} 
+                    eachItem={eachItem} clickTabItem={this.clickTabItem} 
+                    isActive={activeid === eachItem.id}/> 
+                )}
+                {dropdownList.map(eachItem=> <Dropitem key={eachItem.id} eachItem={eachItem}/> )}
+            </ul>
+        </div>
+    )}
+}
+
+    
 
 export default Sidebar
