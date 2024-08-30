@@ -4,6 +4,7 @@ export const Heading = styled.h1`
   color: #0070c1;
   font-family: "sans";
   font-size: 65px;
+  text-align: center;
   @media (max-width: 768px) {
     font-size: 25px;
   }

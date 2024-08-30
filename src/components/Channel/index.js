@@ -3,7 +3,7 @@ import { Heading, Container } from "../styledComponents";
 const Channel=()=>{
    return (
       <Container>
-         <Heading>Channel</Heading>
+         <Heading>Welcome to <br/>Channel</Heading>
       </Container>
    ) 
 }

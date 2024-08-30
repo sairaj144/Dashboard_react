@@ -3,7 +3,7 @@ import { Heading, Container } from "../styledComponents";
 const Integrations=()=>{
    return(
       <Container>
-         <Heading>Integrations</Heading>
+         <Heading>Welcome to <br/>Integrations</Heading>
       </Container>
    )
 }

@@ -23,7 +23,7 @@ const dropdownList=[
 class Sidebar extends Component {
     state = {
         activeid: '',
-        isClicked: true,
+        isClicked: false,
     }
 
     clickTabItem = tabValue => {

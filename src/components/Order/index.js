@@ -3,7 +3,7 @@ import { Heading, Container } from "../styledComponents";
 const Order=()=>{
    return (
       <Container>
-         <Heading>Order</Heading>
+         <Heading>Welcome to <br/>Orders</Heading>
       </Container>
    )
 }
