@@ -1,5 +1,4 @@
 
-
 .sidebar-container{
     background-color: #ffffff;
     max-width: 30%;
@@ -44,11 +43,91 @@
     color:blueviolet;
 }
 
-ul{
+.menuitems{
     width:200px;
     list-style-type: none;
 }
 
 li:hover {
     background-color: aqua;
+  }
+
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    
+    .sidebar-container{
+        background-color: #ffffff;
+        max-width: 25%;
+        height:100%;
+        padding-left: 0px;
+    }
+
+.dropitem{
+    border:none;
+    width:90%;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    color: grey;
+    padding: 5px 10px 5px 0px;
+    border-radius: 4px;
+    margin: 2px;
+    background-color: transparent;
+    list-style-type: none;
+}
+
+.listitem{
+    width:90%;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+    padding: 6px 10px 6px 5px;
+    border-radius: 4px;
+    margin: 2px;
+    border:none;
+}
+
+.list-btn{
+    border:none;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+    text-decoration: none;
+}
+
+.active-tab-btn{
+    background-color: aqua;
+    color:blueviolet;
+}
+
+.menuitems{
+    margin-left: 0px;
+    padding-left: 5px;
+    width:100px;
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: aqua;
+  }
+    
+.menu-icon{
+    display: block;
+    padding: 4px;
+    font-size: 24px;
+    margin-left: auto;
+}
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
   }

@@ -52,6 +52,9 @@ const SalespieChart=()=> {
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
+      <text x="50%" y="50%" dy={10} textAnchor="middle" fill="#000" fontSize={18} >
+        Total: 2659
+      </text>
       <Legend 
           verticalAlign="bottom"
           align="center"

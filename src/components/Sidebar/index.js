@@ -2,7 +2,7 @@ import {Component} from 'react'
 import './index.css'
 import {v4 as uuidv4} from 'uuid'
 import Listitem from './listitem.js'
-
+import { GiHamburgerMenu } from "react-icons/gi";
 import Dropitem from './dropitem.js'
 
 const sidebarList= [{id: uuidv4(), title:"Dashboard"},
@@ -22,19 +22,33 @@ const dropdownList=[
 
 class Sidebar extends Component {
     state = {
-        activeid: sidebarList[0].id,
+        activeid: '',
+        isClicked: true,
     }
 
     clickTabItem = tabValue => {
         this.setState({activeid: tabValue})
     }
 
+
+     toggleMenu=()=>{
+        
+            this.setState(prevState => ({isClicked: !prevState.isClicked}))
+          
+    }
+
+  
+
     render(){
-        const {activeid} = this.state
-        console.log(activeid)
+        const {activeid, isClicked} = this.state
+const viewsidebar= isClicked? "show":"hide"
+        console.log(activeid, isClicked)
         return(
         <div className='sidebar-container'>
-            <ul>
+            <div>
+                <GiHamburgerMenu className='menu-icon' onClick={this.toggleMenu} />
+            </div>
+            <ul className={`menuitems ${viewsidebar}`} >
                 {sidebarList.map(eachItem=> <Listitem key={eachItem.id} 
                     eachItem={eachItem} clickTabItem={this.clickTabItem} 
                     isActive={activeid === eachItem.id}/> 
@@ -42,6 +56,7 @@ class Sidebar extends Component {
                 {dropdownList.map(eachItem=> <Dropitem key={eachItem.id} eachItem={eachItem}/> )}
             </ul>
         </div>
+        
     )}
 }
 
