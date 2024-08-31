@@ -8,6 +8,17 @@ Check out the live version of the application: [Live Demo](https://dashboard-rea
 
 ## Screenshots
 Dashboard Screenshot ![image](https://github.com/user-attachments/assets/f45ec16f-6619-4dbd-b4e7-a2ad85a15655)
-Mobile View ![5a5d81e6-4dca-412c-99ef-de7f9666fe89](https://github.com/user-attachments/assets/912575b9-4019-4c4c-a867-2b9db79b1807)
+Mobile View
+![5a5d81e6-4dca-412c-99ef-de7f9666fe89](https://github.com/user-attachments/assets/912575b9-4019-4c4c-a867-2b9db79b1807)
+
+## Installation
+
+1. Clone the repository:
+   git clone https://github.com/your-username/react-dashboard-app.git
+   cd react-dashboard-app
+   npm install
+   npm start
+
+
 
 
