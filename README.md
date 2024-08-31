@@ -14,7 +14,7 @@ Mobile View
 ## Installation
 
 1. Clone the repository:
-2. git clone https://github.com/your-username/react-dashboard-app.git
+2. git clone https://github.com/sairaj144/Dashboard_react.git
 3. cd react-dashboard-app
 4. npm install
 5. npm start
